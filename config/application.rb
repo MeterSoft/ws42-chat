@@ -1,16 +1,14 @@
 require File.expand_path('../boot', __FILE__)
 
-# require 'rails/all'
-require "action_controller/railtie"
-require "action_mailer/railtie"
-require "rails/test_unit/railtie"
-require "sprockets/railtie"
+require 'rails/all'
 
-# Assets should be precompiled for production (so we don't need the gems loaded then)
-Bundler.require(*Rails.groups(assets: %w(development test)))
+# Require the gems listed in Gemfile, including any gems
+# you've limited to :test, :development, or :production.
+Bundler.require(:default, Rails.env)
 
 module Ws42
   class Application < Rails::Application
+    config.assets.initialize_on_precompile = false
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

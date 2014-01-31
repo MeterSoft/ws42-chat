@@ -12,6 +12,6 @@ I also integrated bootstrap-sass into this project.
 $ heroku labs:enable websockets
 Enabling websockets for <$your_app_name>
 WARNING: This feature is experimental and may change or be removed without notice.
-For more information see: https://devcenter.heroku.com/articles/heroku-labs-websockets```
+For more information see: https://devcenter.heroku.com/articles/heroku-labs-websockets
 
 This caused a lot of frustration until I realized you had to let the server sit for a few minutes to allow websockets. Then you have to force reload the page so it doesn't load from cache. Then it should work.

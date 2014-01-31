@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Ws42" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Ws42" %>">
+    <title><%= content_for?(:title) ? yield(:title) : "WebSockets Tech Demo" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "WebSockets Tech Demo" %>">
     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
@@ -40,11 +40,6 @@
       </div>
     </div><!--/row-->
   </div><!--/content-->
-  <div id="footer">
-    <div class="container">
-      <p class="muted credit">Hacked together by <a href="http://www.pogoapp.com">Pogoapp</a>. Code available <a href="https://github.com/themgt/ws42-chat">here</a> (<a href="https://github.com/DanKnox/websocket-rails-Example-Project">with much borrowed</a>)</p>
-    </div>
-  </div>
 </div> <!-- /container -->
 
 

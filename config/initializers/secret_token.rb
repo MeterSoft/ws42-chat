@@ -1,6 +1,6 @@
 # Be sure to restart your server when you modify this file.
 
-# Your secret key for verifying the integrity of signed cookies.
+# Your secret key is used for verifying the integrity of signed cookies.
 # If you change this key, all old signed cookies will become invalid!
 
 # Make sure the secret is at least 30 characters and all random,
@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Ws42::Application.config.secret_key_base = '0bbb11b342423911478430225d0075803c08a14509292011a60d1155621d9bc1aec5019bf77cdc1951bf109a4356f4c27d80090f947bbaafa7245f289742c662'
+Ws42::Application.config.secret_key_base = '1fd42f16a2d3b18824538b7afa3a74f138a6938e107cfb6b7e1e2d2ea53dc11a97072227bf62c797aad3dddc580ca4769500c06c755f08be0344b9ac97c43f03'

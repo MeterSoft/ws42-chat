@@ -14,8 +14,9 @@ gem 'bootstrap-sass'
 gem 'rails_layout'
 
 # production
-gem 'pg'
-gem 'rails_12factor'
+# gem 'pg'
+# gem 'rails_12factor'
+gem 'mysql2'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -38,6 +39,11 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+gem "net-ssh", "~> 2.7.0"
+
+gem 'unicorn'
+gem 'thin'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -54,3 +60,10 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+group :development do
+  gem 'capistrano', '2.13.5'
+  gem 'capistrano_colors'
+  gem 'rvm-capistrano'
+  gem 'capistrano-unicorn'
+end

@@ -27,8 +27,8 @@ set :deploy_via, :remote_cache
 set :copy_exclude, [ '.git' ]
 
 after "deploy", "deploy:cleanup" # keep only the last 5 releases
-# before "deploy", "deploy:stop_websocket"
-# before "deploy:migrations", "deploy:stop_websocket"
+before "deploy", "deploy:stop_websocket"
+before "deploy:migrations", "deploy:stop_websocket"
 after "deploy", "deploy:start_websocket"
 after "deploy:migrations", "deploy:start_websocket"
 

@@ -14,8 +14,10 @@ gem 'bootstrap-sass'
 gem 'rails_layout'
 
 # production
-gem 'pg'
-gem 'rails_12factor'
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
 gem 'mysql2'
 
 # Use SCSS for stylesheets

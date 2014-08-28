@@ -1,5 +1,5 @@
 jQuery ->
-  window.chatController = new Chat.Controller('murmuring-wildwood-8433.herokuapp.com:443/websocket', true);
+  window.chatController = new Chat.Controller('https://murmuring-wildwood-8433.herokuapp.com/websocket', true);
 
 window.Chat = {}
 
